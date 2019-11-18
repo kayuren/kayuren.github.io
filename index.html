@@ -1,11 +1,10 @@
-<!--
--&#45;&#45;
+---
 title: "Mundana Free Jekyll Theme"
 layout: default
 pagination:
     enabled: true
 description: "A great Jekyll theme developed by Sal @wowthemesnet."
--&#45;&#45;
+---
 
 
 <div class="container">
@@ -14,10 +13,10 @@ description: "A great Jekyll theme developed by Sal @wowthemesnet."
     
     
     
-&lt;!&ndash; Begin post excerpts, let's highlight the first 4 posts on top &ndash;&gt;
+<!-- Begin post excerpts, let's highlight the first 4 posts on top -->
 <div class="row remove-site-content-margin">
     
-    &lt;!&ndash; latest post &ndash;&gt;
+    <!-- latest post -->
     {% assign latest_post = site.posts[0] %}
     <div class="col-md-6">
     <div class="card border-0 mb-4 box-shadow">   
@@ -49,7 +48,7 @@ description: "A great Jekyll theme developed by Sal @wowthemesnet."
     
     <div class="col-md-6">
         
-        &lt;!&ndash; second latest post &ndash;&gt;
+        <!-- second latest post -->
         {%- assign second_post = site.posts[1] -%}        
         <div class="mb-3 d-flex align-items-center">                
                 {% if second_post.image %}
@@ -76,7 +75,7 @@ description: "A great Jekyll theme developed by Sal @wowthemesnet."
                 </div>
             </div>
         
-        &lt;!&ndash; third latest post &ndash;&gt;
+        <!-- third latest post -->
         {%- assign third_post = site.posts[2] -%}        
         <div class="mb-3 d-flex align-items-center">                
                 {% if third_post.image %}
@@ -103,7 +102,7 @@ description: "A great Jekyll theme developed by Sal @wowthemesnet."
                 </div>
             </div>
         
-        &lt;!&ndash; fourth latest post &ndash;&gt;
+        <!-- fourth latest post -->
         {%- assign fourth_post = site.posts[3] -%}        
         <div class="mb-3 d-flex align-items-center">                
                 {% if fourth_post.image %}
@@ -134,7 +133,7 @@ description: "A great Jekyll theme developed by Sal @wowthemesnet."
     
 </div>
     
-&lt;!&ndash; Sticky - add sticky tag to the post you want to highlight here - tags: [sticky] &ndash;&gt;
+<!-- Sticky - add sticky tag to the post you want to highlight here - tags: [sticky] -->
 {% for post in site.posts %} 
 {% if post.tags contains "sticky" %}
 <div class="jumbotron jumbotron-fluid jumbotron-home pt-0 pb-0 mt-3 mb-2rem bg-lightblue position-relative">
@@ -159,11 +158,11 @@ description: "A great Jekyll theme developed by Sal @wowthemesnet."
     
 
 
-{% endif %} &lt;!&ndash;endif page url is / &ndash;&gt;
+{% endif %} <!--endif page url is / -->
     
 
 
-&lt;!&ndash; Now the rest of the posts with the usual loop but with an offset:4 on the first page so we can skeep the first 4 posts displayed above &ndash;&gt;
+<!-- Now the rest of the posts with the usual loop but with an offset:4 on the first page so we can skeep the first 4 posts displayed above -->
     
 <div class="row mt-3">
    
@@ -179,7 +178,7 @@ description: "A great Jekyll theme developed by Sal @wowthemesnet."
         {% endfor %}
         
         <div class="mt-5">
-         &lt;!&ndash; Pagination links &ndash;&gt;
+         <!-- Pagination links -->
             {% if paginator.total_pages > 1 %}
             <ul class="pagination"> 
               {% if paginator.previous_page %}
@@ -217,4 +216,4 @@ description: "A great Jekyll theme developed by Sal @wowthemesnet."
 
 
 
-</div>-->
+</div>
